@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PingGuard"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мониторинг сети во время игры"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:layout_marginBottom="32dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#1E1E1E"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvPingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:textColor="#34C759"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPingStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ожидание..."
+            android:textColor="#AAAAAA"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <com.pingguard.app.PingGraphView
+        android:id="@+id/pingGraphView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="#1E1E1E" />
+
+    <Button
+        android:id="@+id/btnStartMonitoring"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:text="▶ Запустить мониторинг"
+        android:backgroundTint="#34C759"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnStopMonitoring"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:text="⏹ Остановить"
+        android:backgroundTint="#3A3A3A"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnGameMode"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:text="🎮 Оптимизировать перед игрой"
+        android:backgroundTint="#FF9500"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnNetworkSettings"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:text="⚙ Открыть настройки сети"
+        android:backgroundTint="#3A3A3A"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
