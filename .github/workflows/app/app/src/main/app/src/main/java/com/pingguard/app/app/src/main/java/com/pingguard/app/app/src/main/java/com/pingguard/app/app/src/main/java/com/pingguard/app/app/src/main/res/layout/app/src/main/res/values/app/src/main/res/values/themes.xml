@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.PingGuard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#34C759</item>
+        <item name="colorPrimaryDark">#121212</item>
+        <item name="android:windowBackground">#121212</item>
+    </style>
+</resources>
